@@ -1,7 +1,7 @@
 # Skills and Patterns
 
 These are skills and patterns for waoai developers. They should be used as a reference
-whereever possible or useful.
+wherever possible or useful.
 
 ## How much of this should I know?
 
