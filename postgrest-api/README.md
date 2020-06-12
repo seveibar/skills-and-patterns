@@ -8,3 +8,4 @@ There are some constraints to make Postgrest systems work well:
 who are used to processing on the backend get confused here. Move your processing to 1) external APIs, such as vercel
 endpoints 2) to the client or 3) to a queue system that reads from the database.
 * Use RLS to make sure data access is secure
+* Move authentication to Auth0
