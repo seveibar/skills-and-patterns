@@ -8,7 +8,7 @@ is used to optimize code for rendering.
 
 React rerenders a component when it's props don't pass a shallow equal test. Consider the following subsequent renders:
 
-```
+```javascript
 const MyComponent = ({ a, b }) => <div>a={a}, b={b}</div>
 
 // Render 1
@@ -23,14 +23,14 @@ const MyComponent = ({ a, b }) => <div>a={a}, b={b}</div>
 React knows that the second rendering of the component is equal, because it runs a shallow comparison on the props; it
 checks each prop to see if it changed.
 
-```
+```javascript
 next.a === prev.a // true
 next.b === next.b // true
 // okay! no need to rerender! I'll use the same rendering from before
 ```
 
 This becomes problematic when you work with objects. Since objects aren't primitives, you can't compare them normally:
-```
+```javascript
 {a: 1} === {a: 1} // false! These are different object references
 ```
 
