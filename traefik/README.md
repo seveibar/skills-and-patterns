@@ -25,7 +25,9 @@ This keeps https configuration simple.
 ### Example HTTP Traefik Configuration
 
 ```javascript
+// ----------------------------------
 // package.json
+// ----------------------------------
 {
   "name": "reverse-proxy",
   "scripts": {
@@ -35,7 +37,10 @@ This keeps https configuration simple.
 ```
 
 ```yaml
+# ----------------------------------
 # static-config.yaml
+# ----------------------------------
+
 entryPoints:
   web:
     address: :9123
@@ -52,7 +57,16 @@ providers:
     watch: true
     filename: "dynamic-config.yaml"
 
+
+
+
+
+
+
+# ----------------------------------
 # dynamic-config.yaml
+# ----------------------------------
+
 http:
   routers:
     to-gui:
