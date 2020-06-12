@@ -30,3 +30,9 @@ Know the following commands:
   - Fetch and follow the logs of a container:
     docker logs -f container_name
 ```
+
+## Creating a Docker Container
+
+Docker containers should be created for applications that must run on a server and cannot be run with
+Vercel (always prefer Vercel). Usually, the reason we create a docker container is because we've used
+postgrest, which cannot run on vercel.
