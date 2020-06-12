@@ -14,7 +14,6 @@ There are two ways to style a React component, each for different scenarios:
 ## Use `styled`
 
 ```javascript
-//             you can use any component, not just "div"
 const SomeComponent = styled("div")({
   border: "1px solid #000",
   "& .titleText": {
@@ -29,8 +28,10 @@ const SomeComponent = styled("div")({
 Styled can also use props you pass to it:
 
 ```javascript
-//             you can use any component, not just "div"
-const SomeComponent = styled("div")(({ isFocused }) => ({
+
+import Button from "@material-ui/core/Button"
+
+const SomeComponent = styled(Button)(({ isFocused }) => ({
   border: "1px solid #000",
   backgroundColor: isFocused ? "#f00" : #fff",
   "& .titleText": {
