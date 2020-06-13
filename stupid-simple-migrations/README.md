@@ -17,7 +17,9 @@ So when structuring a project, you'll want to create a `database` subproject tha
 ```
 
 > A lot of this functionality is in https://github.com/seveibar/qspg/, so this documentation will be simplified in
-> near future. This technique is also just a more Node.js-y version of [stack overflow](https://gist.github.com/NickCraver/b59ff38567b32936e2a3440e439d5d5c#file-sql-migrator-readme-md) migrations.
+> near future. This technique is also just a more Node.js-y version of [stack overflow](https://gist.github.com/NickCraver/b59ff38567b32936e2a3440e439d5d5c#file-sql-migrator-readme-md) migrations. Many
+> people have built this migration scheme in-house [(e.g)](https://github.com/jefflindholm/migrate) but for some
+> reason there is no standardized project.
 
 ## package.json
 
