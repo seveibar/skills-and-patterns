@@ -4,6 +4,8 @@ pm2 is a process manager that makes it very easy to run many node projects simul
 when Vercel can't be used. You'll know you need pm2 when it takes more than two commands to run a non-vercel project.
 If it takes exactly two commands to run a project, use [concurrently](https://www.npmjs.com/package/concurrently).
 
+pm2 is often accompanied by [lerna](../lerna/README.md).
+
 ## Example ecosystem.yaml
 
 ```yaml
