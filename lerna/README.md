@@ -1,6 +1,6 @@
 # Lerna
 
-Lerna is a way of organizing many subprojects in a single repository. It is used by large open-source projects
+[Lerna](https://github.com/lerna/lerna) is a way of organizing many subprojects in a single repository. It is used by large open-source projects
 and should be used whenever a project has more than 2 subprojects.
 
 Note that lerna is often accompanied by [pm2](../pm2/README.md).
