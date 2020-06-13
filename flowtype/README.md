@@ -12,7 +12,7 @@ Use [flow-node](https://www.npmjs.com/package/flow-node).
 Typescript is much more constrained than flow and adds significant project complexity.
 
 > *Typescript enables developers to build very complex systems. Complex systems are the anti-thesis of KISS and
->  [burnable-projects](../burnable-projects/README.md). Typescript is good at managing complex projects- but
+>  [burnable-projects](../burnable-projects). Typescript is good at managing complex projects- but
 >  a project with enough complexity to justify Typescript is too complex.
 
 ## Anti-pattern: Repeated Duck Typing
