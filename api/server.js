@@ -23,7 +23,7 @@ const md = require("markdown-it")({
 const itemNames = fs
   .readdirSync(".")
   .filter((a) => !a.includes("."))
-  .filter((a) => a !== "node_modules")
+  .filter((a) => a !== "node_modules" && a !== "api")
 
 const render = (item) => {
   return `<html>
