@@ -11,8 +11,8 @@ for things to sink in.
 ## Why did we pick XXX over YYY?
 
 Open a PR, start a discussion. The patterns and technology here are mostly based on @seveibar's years
-of building open-source and startup applications, with some applications used by hundreds of thousands
-of people a year. Eventually it'll be based on a collective discussion.
+of building open-source and startup applications, with several applications used by hundreds of thousands
+of people. Eventually it'll be based on a collective discussion.
 
 ## Proposing Changes
 
