@@ -99,9 +99,9 @@ export const ToastProvider = ({ children }) => {
 
 ```
 
-### 2.2 React Query Pattern
+### 2.2 Recoil Pattern
 
-This is a new pattern that is better than Redux. See [React Query](https://github.com/tannerlinsley/react-query)
+This is a new pattern that is better than Redux. See [Recoil](https://recoiljs.org/)
 for details.
 
 TODO some examples here
