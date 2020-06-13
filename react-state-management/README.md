@@ -104,7 +104,7 @@ export const ToastProvider = ({ children }) => {
 This is a new pattern that is better than Redux. See [Recoil](https://recoiljs.org/)
 for details.
 
-TODO some examples here
+* [Video Course on Recoil](https://egghead.io/lessons/react-set-up-recoil-in-a-new-react-app)
 
 ### Deprecated Pattern: Redux
 
