@@ -20,6 +20,7 @@ large burnable way. In an open-source projects:
 ## Anti-pattern: Boy-scout Rule
 
 The boy-scout rule is to "leave a codebase better than you found it", or, "if you change any code, make the
-surrounding code easier to understand (if you can)".
+surrounding code easier to understand (if you can)". **The boy scout rule is unnecessary in burnable projects,
+because burnable-projects acknowledges that codebases only get worse until they're burned.**
 
 > The actual boyscout rule is "Leave a campsite better than you found it."
