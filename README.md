@@ -5,7 +5,7 @@ wherever possible or useful.
 
 ## How much of this should I know?
 
-You should know everything here. A lot of it is by doing, so it might take a while
+You should know everything here within 3-6 months. A lot of it is by doing, so it might take a while
 for things to sink in.
 
 ## Why did we pick XXX over YYY?
