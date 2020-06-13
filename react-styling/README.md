@@ -1,15 +1,21 @@
 # React Styling
 
 There are two ways to style a React component, each for different scenarios:
-* General case (use `styled`)
+* General case (use `styled` from Material UI)
 * You have a tiny amount of styling that is changed by javascript (inline style)
 
-
-* Directly use inline style
-* Use `styled` from Material UI
-* Use `makeStyles` from Material UI
-
 ## Directly use inline style
+
+If you have a small amount of variably applied styling, you can use an inline style.
+
+### Example
+
+```javascript
+const MyComponent = ({ isClicked }) => {
+  const style = useMemo(() => isClicked ? { color: "#f00" } : {})
+  return <div style={style}>this is red when isClicked=true</div>
+}
+```
 
 ## Use `styled`
 
