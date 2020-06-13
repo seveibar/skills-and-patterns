@@ -22,3 +22,8 @@ Technology choices and patterns are always opinionated. Patterns and technologie
 documents. Still, you must be an expert in what you are replacing to make a case for it's replacement. So
 if you want to replace Postgres with MongoDB, or Material UI with Semantic UI, or $PROVEN_TECH with $TECH_OF_MONTH,
 you'll need to have serious chops in BOTH technologies.
+
+## Read Online
+
+You can [view these online](https://sp.workaround.ai/) and quickly reference by typing
+`sp.workaround.ai/<abbreviated pattern name>`.
