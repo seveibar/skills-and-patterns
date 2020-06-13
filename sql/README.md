@@ -9,9 +9,11 @@ be further broken down into 5 main subskills:
 4. PL/pgSQL (a Postgresql dialect for writing functions)
 5. Avoiding SQL Anti-Patterns
 
-Many developers nowadays don't know SQL, this is unfortunate because it is a very small language and most of\
-the databases and systems of the world are built on SQL. [Here is a good set of courses to gain initial familiarity](https://pgexercises.com/). *Many people believe that NoSQL will replaced SQL. [This is wrong.](https://trends.google.com/trends/explore?date=today%205-y&q=nosql,sql) Even things like GraphQL require that
-you define SQL Schemas.*
+Many developers nowadays don't know SQL, this is unfortunate because it is a very small language and most of
+the databases and systems of the world are built on SQL. [Here is a good set of courses to gain initial familiarity](https://pgexercises.com/).
+
+> *Many people believe that NoSQL will replaced SQL. [This is wrong.](https://trends.google.com/trends/explore?date=today%205-y&q=nosql,sql) Even things like GraphQL require that
+> you define SQL Schemas.*
 
 ## Querying
 
