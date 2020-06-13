@@ -35,7 +35,14 @@ component is being mounted multiple times, you're making extra API requests. Go 
 
 You must use a global state pattern.
 
-### 2.1 Context Pattern
+### 2.1 Recoil Pattern (preferred)
+
+This is a new pattern that is better than Redux. See [Recoil](https://recoiljs.org/)
+for details.
+
+* [10 minute Video Course on Recoil](https://egghead.io/lessons/react-set-up-recoil-in-a-new-react-app)
+
+### 2.2 Context Pattern
 
 React Context is very useful for managing global state. There are many contexts in an App at any given
 time, usually broken down by their specific domain. For example, this is a typical `App.js`.
@@ -98,13 +105,6 @@ export const ToastProvider = ({ children }) => {
 }
 
 ```
-
-### 2.2 Recoil Pattern
-
-This is a new pattern that is better than Redux. See [Recoil](https://recoiljs.org/)
-for details.
-
-* [Video Course on Recoil](https://egghead.io/lessons/react-set-up-recoil-in-a-new-react-app)
 
 ### Deprecated Pattern: Redux
 
