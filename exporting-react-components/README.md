@@ -17,6 +17,7 @@ export default SomeComponent
 If only a default export is used, the React Devtools Extension will label the component as "anonymous".
 
 ```javascript
+// BAD
 import React from "react"
 
 export default () => {
