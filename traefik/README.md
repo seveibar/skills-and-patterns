@@ -60,9 +60,6 @@ providers:
 
 
 
-
-
-
 # ----------------------------------
 # dynamic-config.yaml
 # ----------------------------------
@@ -93,3 +90,5 @@ http:
         servers:
           - url: "http://localhost:9102"
 ```
+
+### Example HTTPS Traefik Configuration
