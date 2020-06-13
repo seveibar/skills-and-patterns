@@ -1,7 +1,7 @@
 # SQL
 
 Postgres SQL is incredibly powerful and enabling language for building scalable database systems. This can
-be further broken down into 5 main skills:
+be further broken down into 5 main subskills:
 
 1. Querying
 2. Database Schema Creation
@@ -9,9 +9,67 @@ be further broken down into 5 main skills:
 4. PL/pgSQL (a Postgresql dialect for writing functions)
 5. Avoiding SQL Anti-Patterns
 
+## Querying
+
+The statements for querying are `SELECT`, `UPDATE`, 
+
 ## Database Schema Creation
 
-## Querying
+Schema creation is just creating all the tables that make up your database. This means defining a bunch
+of tables and their types, and thinking deeply about the application's domain to guess which fields will
+be necessary. Don't draw diagrams for this, your schema should never be that complicated (if you find
+your schema needs over 10 tables, the scope of the application is too large).
+
+Usually you'll also define basic indexes when creating your tables. An index is a way of telling the
+database that a column of the table may be used for querying. Most indexes are automatic, and nothing
+needs to be done.
+
+Here's an example of a table:
+
+```sql
+CREATE TABLE platform.account (
+  account_id uuid NOT NULL PRIMARY KEY DEFAULT gen_random_uuid(),
+  account_num serial,
+  auth_id text NOT NULL UNIQUE,
+  username text NOT NULL UNIQUE,
+  dashboard_settings jsonb NOT NULL DEFAULT '{}',
+  created_at timestamptz NOT NULL DEFAULT current_timestamp
+);
+
+CREATE INDEX auth_id_idx ON platform.account (auth_id);
+```
+
+### Standarized Id Format
+
+Always define a tables id with a name `<table name>_id` a default of `gen_random_uuid()`.
+
+### Optional serial number
+
+It can be useful to attach a serial number column to a column. These are often used as administrative
+references, because UUIDs are hard to reference verbally or in messages.
+
+### Good Table Names
+
+* All lowercase
+* Never plural
+
+### Good Column Names
+
+* All lowercase
+* Each word separated by underscores (except for blessed names: `username`, `nickname`, `password`)
+* Can be plural
+
+### Anti-pattern: Missing `created_at`
+
+Every table should have `created_at`, which is usually set to the following:
+
+```sql
+created_at timestamptz NOT NULL DEFAULT current_timestamp
+```
+
+### Anti-pattern: Using anything except timestamptz for time
+
+Never use anything except `timestamptz` for tracking time.
 
 ## [Row Level Security](../row-level-security/README.md)
 
@@ -44,3 +102,10 @@ CREATE FUNCTION apikey() RETURNS text as $BODY$
   END
 $BODY$ LANGUAGE plpgsql;
 ```
+
+## Avoiding SQL Anti-Patterns
+
+It takes many many years to naturally learn SQL Anti-patterns because schemas are designed so infrequently
+and almost never rewritten. This means that devs don't have the opportunity to experiment with schemas and
+find the best options. So, to avoid SQL Anti-patterns, you have to read or get insight from someone who
+has read "SQL Anti-Patterns".
