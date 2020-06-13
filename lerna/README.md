@@ -7,8 +7,8 @@ Note that lerna is often accompanied by [pm2](../pm2/README.md).
 
 Structure of an example lerna project:
 
-```
-├── packages
+```javascript
+├── packages             // Each project in the packages directory has a package.json
 │   ├── app
 │   ├── billing-api
 |   ├── postgrest-api
