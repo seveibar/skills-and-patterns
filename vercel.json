@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/server.js": {
+      "includeFiles": "**/*.md"
+    }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "api/server.js" }]
+}

@@ -1,7 +1,7 @@
 # React Application Architecture
 
 React Applications are user-facing applications (usually not libraries) that may interact with a server. They should be
-bootstrapped with [create-react-app](https://github.com/facebook/create-react-app) and [React Storybook](#).
+bootstrapped with [create-react-app](https://github.com/facebook/create-react-app) and [React Storybook](../react-storybook).
 
 The architecture looks like this:
 
@@ -19,6 +19,6 @@ README.md
     ├── lib              # Contains shared hooks or shared javascript methods
         └── hooks
     ├── App.css          # Sets basic CSS for application
-    ├── App.js           # 
+    ├── App.js           #
     └── index.js         # Called when application starts
 ```

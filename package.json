@@ -1,0 +1,14 @@
+{
+  "name": "@wao/skills-and-patterns",
+  "scripts": {
+    "start": "micro server.js",
+    "dev": "micro-dev api/server.js",
+    "build": "mkdir -p public && touch public/vercel-made-me.txt"
+  },
+  "dependencies": {
+    "highlight.js": "^10.1.0",
+    "markdown-it": "^11.0.0",
+    "micro": "^9.3.4",
+    "micro-dev": "^3.0.0"
+  }
+}
