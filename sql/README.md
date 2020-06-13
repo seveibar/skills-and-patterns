@@ -9,9 +9,18 @@ be further broken down into 5 main subskills:
 4. PL/pgSQL (a Postgresql dialect for writing functions)
 5. Avoiding SQL Anti-Patterns
 
+Many developers nowadays don't know SQL, this is unfortunate because it is a very small language and most of\
+the databases and systems of the world are built on SQL. [Here is a good set of courses to gain initial familiarity](https://pgexercises.com/). *Many people believe that NoSQL will replaced SQL. [This is wrong.](https://trends.google.com/trends/explore?date=today%205-y&q=nosql,sql) Even things like GraphQL require that
+you define SQL Schemas.*
+
 ## Querying
 
-The statements for querying are `SELECT`, `UPDATE`, 
+The statements for querying are `SELECT`, `UPDATE`, `DELETE`
+
+### Anti-pattern: Long, nested subqueries
+
+Subqueries can make things very difficult to read. If you have more than one nested subsquery, you might
+want to consider creating a `VIEW` that simplifies the query in the database schema.
 
 ## Database Schema Creation
 
@@ -58,6 +67,30 @@ references, because UUIDs are hard to reference verbally or in messages.
 * All lowercase
 * Each word separated by underscores (except for blessed names: `username`, `nickname`, `password`)
 * Can be plural
+
+### Views
+
+Postgres allows you to create VIEWs, which are queries that pretend to be tables. This is helpful for
+simplifying SELECT queries. Here is an example of a view:
+
+```sql
+CREATE VIEW platform_api.payment_method AS
+  SELECT
+    payment_method_id,
+    team_id,
+    created_by,
+    nickname,
+    is_default,
+    payment_method_type,
+    (
+      SELECT COALESCE(SUM(amount), 0) FROM platform.deposit
+        WHERE deposit.payment_method_id=payment_method.payment_method_id
+    ) total_spent,
+    created_at
+  FROM
+    platform.payment_method
+  WHERE archived = FALSE;
+```
 
 ### Anti-pattern: Missing `created_at`
 
