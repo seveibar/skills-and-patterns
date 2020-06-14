@@ -5,5 +5,6 @@ use the Cloud9 IDE.
 
 ## Anti-pattern: IDE-specific Peer Programming
 
-There are many collaborative extensions for atom, VS Code, vim, ssh, etc. These take too long to set up and are prone to
-local installation issues. They also don't provide virtual machines.
+There are many collaborative extensions for atom, VS Code, vim, ssh, etc. These take too long to set up properly across a
+whole team, remove individual IDE preference and are prone to local installation issues. They also don't provide virtual
+machines.
