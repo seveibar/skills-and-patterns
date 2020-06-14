@@ -106,8 +106,7 @@ export const ToastProvider = ({ children }) => {
 
 ```
 
-### Deprecated Pattern: Redux
+### 2.3: Redux
 
-Redux is too verbose (you have to write a lot to get things done), but is often used in older libraries and applications.
-
-That said, it is important to know because although it has a lot of code, it is an effective pattern.
+Redux is too verbose (you have to write a lot to get things done), but is often used in older libraries and applications,
+and can help with state machines that require very very complex state (IDEs or editors).
