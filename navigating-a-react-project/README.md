@@ -22,3 +22,10 @@ This is known as navigating "up" the tree. Doing this in React is very easy. Do 
 
 > Note: Notice the "<" character at the beginning of the search term. This is essential to finding the usage! Don't
 > search for the component name without the "<" character to find usage!
+
+## Reading a Component
+
+Many slow developers read a React file from the top to the bottom. **Don't read a React file from the top to the bottom**.
+
+**When you open a React file, you'll almost always want to look the children it renders. Quickly scan the document for
+where it returns it's children and start there. When you need to add things, you'll go up to add imports or props.**
