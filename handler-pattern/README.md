@@ -27,7 +27,7 @@ const getErrorDistanceHandler = options => (image1, image2) => {
 }
 
 
-// Asynchronous Concstruction Example
+// Asynchronous Handler Construction Example
 const getAPIHandler = async ({ authInfo }) => {
 
   const token = await getToken(authInfo)
