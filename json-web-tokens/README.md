@@ -36,3 +36,4 @@ module.exports = (req, res) => {
 ## Resources
 
 * [Official JWT Introduction](https://jwt.io/introduction/)
+* [Infographic Explaining JWT Details](https://twitter.com/kamranahmedse/status/1273375903511465990?s=20)
