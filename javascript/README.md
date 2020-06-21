@@ -11,11 +11,11 @@ and has more characters.
 
 > p.s. you might be looking for `map`, which is good. `forEach` is not used in functional-style programming.
 
-### Antipattern: `new Object(), new Array()`
+## Antipattern: `new Object(), new Array()`
 
 Always use "literal" syntax when creating objects and arrays.
 
-```
+```javascript
 // Good
 const array = []
 const obj = {}
