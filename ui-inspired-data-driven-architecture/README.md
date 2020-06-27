@@ -1,6 +1,6 @@
 # User Interface Inspired, Data Driven Architecture
 
-> Before building anything, you should start with the [readme customer release](../customer-release).
+> Before building anything, you should start with the [readme customer release](../readme-customer-release).
 
 When starting to build or architecting an application, you can start in many different places. Many decisions about the interface,
 data and functionality will be considered. The best process for doing this is User Interface Inspired, Data Driven
