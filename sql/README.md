@@ -15,6 +15,8 @@ the databases and systems of the world are built on SQL. [Here is a good set of 
 > *Many people believe that NoSQL will replaced SQL. [This is wrong.](https://trends.google.com/trends/explore?date=today%205-y&q=nosql,sql) Even things like GraphQL require that
 > you define SQL Schemas.*
 
+<a href="https://www.loom.com/share/d6847a71aff94387a4057b6786c2b603"> <p>PostgreSQL Exercises - Watch Video</p> <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d6847a71aff94387a4057b6786c2b603-with-play.gif"> </a>
+
 ## Querying
 
 The statements for querying are `SELECT`, `UPDATE`, `DELETE`
