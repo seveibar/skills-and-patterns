@@ -15,7 +15,7 @@ SELECT properties->>'$ip' FROM posthog_event;
 
 ## Aggregate JSON operators for JSON Inspection / Analysis
 
-![Check out this video where I use jsonb operators on an analytics database](https://www.loom.com/share/f2d81b8b86c0402f9676bc5ab56e7588)
+[Check out this video where I use jsonb operators on an analytics database](https://www.loom.com/share/f2d81b8b86c0402f9676bc5ab56e7588)
 
 ```sql
 -- Get all the possible properties keys by looking at 3 events taking all unique keys
