@@ -1,12 +1,7 @@
 # Skills and Patterns
 
-These are skills and patterns for waoai developers. They should be used as a reference
+These are skills and patterns for my team's developers. They should be used as a reference
 wherever possible or useful.
-
-## How much of this should I know?
-
-You should know everything here within 3-6 months. A lot of it is by doing, so it might take a while
-for things to sink in.
 
 ## Why did we pick XXX over YYY?
 
@@ -25,5 +20,5 @@ you'll need to have serious chops in BOTH technologies.
 
 ## Read Online
 
-You can [view these online](https://sp.workaround.ai/) and quickly reference by typing
-`sp.workaround.ai/<abbreviated pattern name>`.
+You can [view these online](https://sp.seve.blog/) and quickly reference by typing
+`sp.seve.blog/<abbreviated pattern name>`.
