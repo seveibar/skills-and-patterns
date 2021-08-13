@@ -69,8 +69,8 @@ const render = (item) => {
       <meta charset="utf-8">
     </head>
     <body>
-      <a style="color: #2196f3" href="/">skills and patterns for wao.ai devs</a> &middot;
-      <a style="color: #2196f3" href="https://github.com/waoai/skills-and-patterns/tree/master/${item}">source for this file</a>
+      <a style="color: #2196f3" href="/">seve's skills and patterns</a> &middot;
+      <a style="color: #2196f3" href="https://github.com/seveibar/skills-and-patterns/tree/master/${item}">source for this file</a>
       <br/><br/>
       ${md.render(
         fs
